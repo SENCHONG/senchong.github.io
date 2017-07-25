@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>flychen-senc-code</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script type="text/javascript">
+			function link1()
+			{
+				var link1 = document.getElementById("link1");
+				link1.style.color = "red";
+				setTimeout("re();",300);
+			}
+			function link2()
+			{
+				var link2 = document.getElementById("link2");
+				link2.style.color = "red";
+				setTimeout("re();",300);
+			}
+			function re()
+			{
+				var link1 = document.getElementById("link1");
+				var link2 = document.getElementById("link2");
+				if(link1.style.color == "red")
+				{
+					link1.style.color = "#54198A";
+				}
+				if(link2.style.color == "red")
+				{
+					link2.style.color = "#54198A";
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<header id="girl">
+			<img src="img/bg.jpg" />
+			<div id="main">				
+				<strong>
+					<a href="code/chess.rar" id="link1" onclick="link1()">第一学期 | c学籍管理系统</a>
+					<a href="code/student.rar" id="link2" onclick="link2()">第二学期 | 可供两个人对弈的中国象棋程序</a>
+				</strong>
+			</div>
+		</header>
+
+		<footer id="footer">
+			<div class="top">
+				<strong>FLYCHEN-SENC-CODE</strong>
+			</div>
+			<div class="bottom">
+				Copyright © FLYCHEN | CODE | 桂ICP备17000087号-1
+			</div>
+		</footer>
+	</body>
+
+</html>
